@@ -18,7 +18,7 @@ public class StudentManagementApplication {
 
   @GetMapping("/lovely")
   public String hello() {
-    StringUtils.
+    StringUtils.isEmpty();
     return "Take it easy, Ayano!";
   }
 }
