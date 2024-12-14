@@ -18,7 +18,6 @@ public class StudentManagementApplication {
   private Map<String, String> students = new HashMap<>();
 
   {
-    students.put("Dale Cooper", "33");
 
   }
 
@@ -37,10 +36,19 @@ public class StudentManagementApplication {
   @PostMapping("/studentInfo")
   public String setStudentInfo(@RequestParam String name, @RequestParam String age) {
     students.put(name, age);
-    return "Added:" + name + age + " years old.";
+    return "Added: " + name + " " + age + " years old.";
+
+  }
+
+  @GetMapping("/allStudents")
+  public Map<String, String> getAllStudents() {
+    return students;
 
   }
 }
+
+
+
 
 
 
