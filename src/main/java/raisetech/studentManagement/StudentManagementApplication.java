@@ -30,13 +30,3 @@ public class StudentManagementApplication {
     return repository.searchStudentCourse();
   }
 }
-
-
-
-
-
-
-
-
-
-

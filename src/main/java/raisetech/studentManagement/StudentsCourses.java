@@ -15,5 +15,3 @@ public class StudentsCourses {
   private LocalDateTime courseStartAt;
   private LocalDateTime courseEndAt;
 }
-
-

@@ -15,5 +15,3 @@ public class Student {
   private String location;
   private String gender;
 }
-
-
