@@ -8,6 +8,7 @@ import raisetech.studentManagement.data.Student;
 import raisetech.studentManagement.data.StudentsCourses;
 import raisetech.studentManagement.repository.StudentRepository;
 
+
   @Service
   public class StudentService {
 
@@ -52,4 +53,5 @@ import raisetech.studentManagement.repository.StudentRepository;
       return repository.searchStudentCourse();
     }
   }
+
 
