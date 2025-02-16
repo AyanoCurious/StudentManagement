@@ -24,7 +24,11 @@ java {
     }
 
     dependencies {
+        //
         implementation 'org.springframework.boot:spring-boot-starter-web'
+        //Thymeleaf
+        implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
         //便利機能、ユーティリティApache Commons Lang
         implementation 'org.apache.commons:commons-lang3:3.17.0'
 //lombok
