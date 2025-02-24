@@ -26,4 +26,7 @@ public interface StudentRepository {
 
   @Insert("INSERT INTO students (id, full_name, furigana, nickname, email, location, gender, age, remark, is_delete, marks) VALUES (#{id}, #{fullName}, #{furigana}, #{nickname}, #{email}, #{location}, #{gender}, #{age}, #{remark}, #{isDeleted}, #{marks})")
   void insertStudent(Student student);
+
+  /*@Insert("INSERT INTO students_courses (id, student_id, course_name, course_start_at, course_end_at) VALUES (#{id}, #{studentId}, #{courseName}, #{courseStartAt}, #{courseEndAt})")
+  void insertStudentCourse(StudentsCourses studentCourse);*/
 }

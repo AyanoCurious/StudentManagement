@@ -44,7 +44,21 @@
     <label for="marks">成績:</label>
     <input type="text" id="marks" th:field="*{student.marks}" required/>
   </div>
-
+  <!--コース情報を登録する
+    <h1>コース情報登録</h1>
+    <div>
+      <label for="courseName">コース名:</label>
+      <input type="text" id="courseName" th:field="*{course.courseName}" required/>
+    </div>
+    <div>
+      <label for="courseStartAt">開始日:</label>
+      <input type="date" id="courseStartAt" th:field="*{course.courseStartAt}" required/>
+    </div>
+    <div>
+      <label for="courseEndAt">終了日:</label>
+      <input type="date" id="courseEndAt" th:field="*{course.courseEndAt}" required/>
+    </div>
+  -->
   <button type="submit">登録</button>
 </form>
 </body>

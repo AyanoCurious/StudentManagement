@@ -56,5 +56,6 @@ public class StudentService {
 
   public void registerStudent(Student student) {
     repository.insertStudent(student);
+
   }
 }
