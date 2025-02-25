@@ -19,5 +19,3 @@ public class Student {
   private boolean isDeleted;
   private String marks;
 }
-
-
