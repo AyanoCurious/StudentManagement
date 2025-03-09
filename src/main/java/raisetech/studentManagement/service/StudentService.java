@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import raisetech.studentManagement.data.Student;
 import raisetech.studentManagement.data.StudentsCourses;
 import raisetech.studentManagement.domain.StudentDetail;
@@ -54,8 +55,12 @@ public class StudentService {
     return repository.searchStudentCourse();
   }
 
-  public void registerStudent(Student student) {
-    repository.insertStudent(student);
+  @Transactional
+  public void registerStudent(StudentDetail studentDetail) {
+    repository.registerStudent(studentDetail.getStudent());
+    //TODO:コース情報登録も行う
+
+
 
   }
 }
