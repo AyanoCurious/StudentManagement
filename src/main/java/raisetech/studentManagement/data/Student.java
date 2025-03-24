@@ -1,3 +1,4 @@
+//受講生情報の基本情報を管理するデータモデル
 package raisetech.studentManagement.data;
 
 import lombok.Getter;
@@ -7,7 +8,7 @@ import lombok.Setter;
 @Setter
 public class Student {
 
-  private String id;
+  private int id;
   private String fullName;
   private String furigana;
   private String nickname;
