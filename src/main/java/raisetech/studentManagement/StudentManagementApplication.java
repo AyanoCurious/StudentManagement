@@ -19,3 +19,8 @@ public class StudentManagementApplication {
     SpringApplication.run(StudentManagementApplication.class, args);
   }
 }
+/*課題が難しい
+1.springイニシャライザー　第2章まで戻る
+2.授業と復習同時進行
+3.復習すると気づきを得られる
+4.web検索する ⇒ chatGPT*/
